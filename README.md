@@ -4,11 +4,11 @@
 
 ### Basic Transformer Models
 * [Transformer](https://arxiv.org/abs/1706.03762)
-* [Transformer-XL]()
+* [Transformer-XL](https://arxiv.org/abs/1901.02860)
 
 ### Encoder-Only
 * [BERT](https://arxiv.org/abs/1810.04805)
-* [XLNet]()
+* [XLNet](https://arxiv.org/abs/1906.08237)
 
 ### Decoder-Only
 * [GPT-1](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
