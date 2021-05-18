@@ -5,9 +5,11 @@ MAX_SEQ_LEN = 128
 df = pd.read_csv("news.csv")
 
 out_df = pd.DataFrame(data=dict())
-for field in ['label']: # for field in ['title', 'text', 'label']:
-    # out_df[field] = df[field]
-    out_df[field] = df[field]
+# for field in ['title', 'text', 'label']:
+   # out_df[field] = df[field]
+
+value = {"FAKE": 0, "REAL": 1}
+out_df["label"] = [value[l] for l in list(df["label"])]
 
 s1 = list(df['title'])
 s2 = list(df['text'])
