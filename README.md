@@ -36,6 +36,7 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 |            |              |                 |               |                  |
 
 References:
+* [A list of pretrained models in library](https://huggingface.co/transformers/pretrained_models.html)
 * [BookCorpus](https://huggingface.co/datasets/bookcorpus)
 * [An intro blog to GPT-3](https://samcash.substack.com/p/-laymans-guide-to-language-models)
 * [BERT memory analysis](https://krishansubudhi.github.io/deeplearning/2019/09/20/BertMemoryAnalysis.html)
