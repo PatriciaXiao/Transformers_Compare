@@ -52,6 +52,10 @@ References:
 * [GPT summary blog](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)
 * [A transformers summary blog](https://www.topbots.com/generalized-language-models-bert-openai-gpt2/)
 * [Discussion of encoder-only v.s. decoder-only](https://datascience.stackexchange.com/questions/87637/what-is-the-difference-between-gpt-blocks-and-bert-blocks), [another discussion on similar topic](https://stats.stackexchange.com/questions/515152/deciding-between-decoder-only-or-encoder-only-transformers-bert-gpt)
+* Some Chinese blogs (high-quality, but not in English): 
+  * [BERT could also be used for few-shot learning](https://kexue.fm/archives/7764/comment-page-1)
+  * [A faster and better MLM](https://kexue.fm/archives/7661)
+  * []
 
 ### Other important differences
 
@@ -61,6 +65,8 @@ Encoder-only v.s. Decoder-only
 * An encoder-only Transformer, such as **BERT**, each position in the input corresponds to the output at the same position (or [MASK] if masked).
 * A decoder-only Transformer, such as **GPT** models, is meant for autoregressive inference. In other words, the tokens in the input are shifted one position to the right with respect to the output. If the output is ```[hello, world, are, you, okay </end>]```, the input is ```[<start>, hello, world, are, you, okay </end>]```.
 * At inference time, BERT generates all output at once; GPT iteratively generate one token at a time.
+
+#### Pre-Training Methodologies
 
 
 
