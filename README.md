@@ -11,7 +11,7 @@
 * [XLNet](https://arxiv.org/abs/1906.08237)
 
 ### Decoder-Only
-GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.05365) in pre-training phase.
+GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.05365) in pre-training phase. (language model, LM)
 * [GPT-1](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
 * [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 * [GPT-3](https://arxiv.org/abs/2005.14165)
@@ -20,6 +20,15 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 * [BART](https://arxiv.org/abs/1910.13461)
 * [T5](https://arxiv.org/pdf/1910.10683.pdf)
 
-## Compare Their costs
+## Compare Their Costs
 
+### Number of parameters
+
+Image from [an intro to GPT-3](https://samcash.substack.com/p/-laymans-guide-to-language-models).
 ![Compare Cost](./compare_cost.png)
+
+| Model Name | # Parameters | Memory Cost | Training Set Size |
+|------------|--------------|-------------|-------------------|
+| GPT-3      | 175 billion  |             |                   |
+|            |              |             |                   |
+|            |              |             |                   |
