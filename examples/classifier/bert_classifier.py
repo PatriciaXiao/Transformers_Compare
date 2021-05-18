@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import seaborn as sns
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-device = 'cpu'
+device = 'cpu' # "cuda:0"
 
 # Model parameter
 MAX_SEQ_LEN = 128
