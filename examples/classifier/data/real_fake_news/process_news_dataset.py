@@ -13,7 +13,7 @@ out_df["label"] = [value[l] for l in list(df["label"])]
 
 s1 = list(df['title'])
 s2 = list(df['text'])
-out_df['titletext'] = [s1[i] + " " + s2[i] for i in range(len(df))]
+out_df['titletext'] = [" ".join((s1[i] + " " + s2[i]).split()[:MAX_SEQ_LEN]) for i in range(len(df))]
 # for i in range(len(out_df)):
 # 	out_df['titletext'][i] = " ".join(out_df['titletext'][i].split()[:MAX_SEQ_LEN])
 
