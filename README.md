@@ -18,3 +18,7 @@
 ### Encoder-Decoder Models
 * [BART](https://arxiv.org/abs/1910.13461)
 * [T5](https://arxiv.org/pdf/1910.10683.pdf)
+
+## Compare Their costs
+
+![Compare Cost](./compare_cost.png)
