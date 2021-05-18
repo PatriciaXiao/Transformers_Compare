@@ -52,6 +52,7 @@ References:
 * [GPT summary blog](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)
 * [A transformers summary blog](https://www.topbots.com/generalized-language-models-bert-openai-gpt2/)
 * [Discussion of encoder-only v.s. decoder-only](https://datascience.stackexchange.com/questions/87637/what-is-the-difference-between-gpt-blocks-and-bert-blocks), [another discussion on similar topic](https://stats.stackexchange.com/questions/515152/deciding-between-decoder-only-or-encoder-only-transformers-bert-gpt)
+* [XLNet the permutation trick](https://medium.com/saarthi-ai/xlnet-the-permutation-language-model-b30f5b4e3c1e)
 * Some Chinese blogs (high-quality, but not in English): 
   * [BERT could also be used for few-shot learning](https://kexue.fm/archives/7764/comment-page-1)
   * [A faster and better MLM](https://kexue.fm/archives/7661) ([paper on ArXiV](https://arxiv.org/abs/2004.08097))
