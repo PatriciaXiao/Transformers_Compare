@@ -1,7 +1,7 @@
 import pandas as pd 
 
 MAX_SEQ_LEN = 128
-
+SUB_SET_PER = 0.01 # 1.0
 
 df = pd.read_csv("news.csv")
 
@@ -19,7 +19,8 @@ out_df['titletext'] = [" ".join((s1[i] + " " + s2[i]).split()[:MAX_SEQ_LEN]) for
 # 	out_df['titletext'][i] = " ".join(out_df['titletext'][i].split()[:MAX_SEQ_LEN])
 
 split = [0.8, 0.1, 0.1]
-n = len(out_df)
+n = int(len(out_df) * SUB_SET_PER)
+out_df = out_df[:n]
 n_train = int(n * split[0])
 n_valid = int(n * split[1])
 
