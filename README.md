@@ -27,8 +27,8 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 Image from [an intro to GPT-3](https://samcash.substack.com/p/-laymans-guide-to-language-models).
 ![Compare Cost](./compare_cost.png)
 
-| Model Name | # Parameters | Memory Cost | Training Set Size |
-|------------|--------------|-------------|-------------------|
-| GPT-3      | 175 billion  |             |                   |
-|            |              |             |                   |
-|            |              |             |                   |
+| Model Name | # Parameters | Memory Cost  | Training Set Size  | Pre-training ($) |
+|------------|--------------|--------------|--------------------|------------------|
+| GPT-3      | 175 billion  | 300 gigabyte | 499 billion tokens | 12 million       |
+|            |              |              |                    |                  |
+|            |              |              |                    |                  |
