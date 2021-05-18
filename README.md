@@ -55,7 +55,7 @@ References:
 * Some Chinese blogs (high-quality, but not in English): 
   * [BERT could also be used for few-shot learning](https://kexue.fm/archives/7764/comment-page-1)
   * [A faster and better MLM](https://kexue.fm/archives/7661) ([paper on ArXiV](https://arxiv.org/abs/2004.08097))
-  * [Transformers benefit from Masks](https://kexue.fm/archives/6933)
+  * [Transformers benefit from Masks, plus the idea of using BERT as Seq2Seq model, etc.](https://kexue.fm/archives/6933)
 
 ### Other important differences
 
@@ -66,7 +66,10 @@ Encoder-only v.s. Decoder-only
 * A decoder-only Transformer, such as **GPT** models, is meant for autoregressive inference. In other words, the tokens in the input are shifted one position to the right with respect to the output. If the output is ```[hello, world, are, you, okay </end>]```, the input is ```[<start>, hello, world, are, you, okay </end>]```.
 * At inference time, BERT generates all output at once; GPT iteratively generate one token at a time.
 
-#### Pre-Training Methodologies
+#### Pre-Training Masking Methodologies
 
-
+* Traditional, Single-directed (unaware of the "future", aware of the "past"): LSTM, ELMo, GPT, GPT-2, GPT-3.
+* Masked Language Model (hide some tokens in the middle, using information fromtwo directions at the same time): BERT
+* Permutation Language Model (avoiding the [MASK] token, not predicting the tokens in sequential order, predicts in some random order): XLNet
+* etc.
 
