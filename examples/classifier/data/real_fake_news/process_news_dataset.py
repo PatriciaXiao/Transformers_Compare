@@ -5,13 +5,15 @@ MAX_SEQ_LEN = 128
 df = pd.read_csv("news.csv")
 
 out_df = pd.DataFrame(data=dict())
-for field in ['title', 'text', 'label']:
+for field in ['label']: # for field in ['title', 'text', 'label']:
     # out_df[field] = df[field]
-    out_df[field] = [" ".join(item.split()) for item in df[field]]
+    out_df[field] = df[field]
 
-s1 = list(out_df['title'])
-s2 = list(out_df['text'])
+s1 = list(df['title'])
+s2 = list(df['text'])
 out_df['titletext'] = [s1[i] + " " + s2[i] for i in range(len(df))]
+for i in range(len(out_df)):
+	out_df['titletext'][i] = " ".join(out_df['titletext'][i].split()[:MAX_SEQ_LEN])
 
 split = [0.8, 0.1, 0.1]
 n = len(out_df)
