@@ -20,6 +20,10 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 * [BART](https://arxiv.org/abs/1910.13461)
 * [T5](https://arxiv.org/pdf/1910.10683.pdf)
 
+### Paper for Further Discussions
+* [It's Not Just Size That Matters](https://arxiv.org/abs/2009.07118)
+* [Pre-trained methods could be applied to other structures](https://arxiv.org/abs/2105.03322)
+
 ## Compare Their Costs
 
 ![Compare Cost](./compare_cost.png)
@@ -43,4 +47,7 @@ References:
 * [BERT pretraining dataset](https://d2l.ai/chapter_natural-language-processing-pretraining/bert-dataset.html)
 * [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models (a paper on optimizing the memory)](https://arxiv.org/pdf/1910.02054.pdf)
 * [GPT summary blog](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)
+* [A transformers summary blog](https://www.topbots.com/generalized-language-models-bert-openai-gpt2/)
+
+
 
