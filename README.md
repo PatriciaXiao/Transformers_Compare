@@ -23,6 +23,7 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 ### Paper for Further Discussions
 * [It's Not Just Size That Matters](https://arxiv.org/abs/2009.07118)
 * [Pre-trained methods could be applied to other structures](https://arxiv.org/abs/2105.03322)
+* [BERT as Markov Random Field](https://arxiv.org/abs/1902.04094):  it learns a distribution over sentences; we can use BERT not only as parameter initialization for finetuning, but as a generative model of sentences to either score a sentence or sample a sentence.
 
 ## Compare
 
