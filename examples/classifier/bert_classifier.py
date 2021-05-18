@@ -36,9 +36,9 @@ train, valid, test = TabularDataset.splits(path=source_folder, train='train.csv'
 
 # Iterators
 
-train_iter = BucketIterator(train, batch_size=16, sort_key=lambda x: len(x.text),
+train_iter = BucketIterator(train, batch_size=16, sort_key=lambda x: len(x.titletext),
                             device=device, train=True, sort=True, sort_within_batch=True)
-valid_iter = BucketIterator(valid, batch_size=16, sort_key=lambda x: len(x.text),
+valid_iter = BucketIterator(valid, batch_size=16, sort_key=lambda x: len(x.titletext),
                             device=device, train=True, sort=True, sort_within_batch=True)
 test_iter = Iterator(test, batch_size=16, device=device, train=False, shuffle=False, sort=False)
 
