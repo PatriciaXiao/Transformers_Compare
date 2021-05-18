@@ -29,7 +29,7 @@ text_field = Field(use_vocab=False, tokenize=tokenizer.encode, lower=False, incl
 fields = [('label', label_field), ('title', text_field), ('text', text_field), ('titletext', text_field)]
 
 # TabularDataset
-
+source_folder = "data/real_fake_news"
 train, valid, test = TabularDataset.splits(path=source_folder, train='train.csv', validation='valid.csv',
                                            test='test.csv', format='CSV', fields=fields, skip_header=True)
 
