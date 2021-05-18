@@ -32,8 +32,7 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 | GPT-2      | 1.54 billion | 24 gigabyte     | 40 gigabyte   | 50 thousand      |
 | GPT-3      | 175 billion  | 350 gigabyte    | 700 gigabyte  | 12 million       |
 | BERT-large | 340 million  | 16 gigabyte     |               | 7 thousand       |
-|            |              |                 |               |                  |
-|            |              |                 |               |                  |
+| BART-large | 406 million  | 12 gigabyte     |               |                  |
 
 References:
 * [A list of pretrained models in library](https://huggingface.co/transformers/pretrained_models.html)
