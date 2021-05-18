@@ -39,6 +39,7 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 
 ### Compare their costs
 
+I found the following figure from [here](https://samcash.substack.com/p/-laymans-guide-to-language-models).
 ![Compare Cost](./compare_cost.png)
 
 | Model Name | # Parameters | Memory Cost (≥) | Training Set  | Pre-training ($) |
