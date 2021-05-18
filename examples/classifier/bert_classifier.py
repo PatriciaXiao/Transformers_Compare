@@ -25,7 +25,7 @@ UNK_INDEX = tokenizer.convert_tokens_to_ids(tokenizer.unk_token)
 label_field = Field(sequential=False, use_vocab=False, batch_first=True, dtype=torch.float)
 text_field = Field(use_vocab=False, tokenize=tokenizer.encode, lower=False, include_lengths=False, batch_first=True,
                    fix_length=MAX_SEQ_LEN, pad_token=PAD_INDEX, unk_token=UNK_INDEX)
-fields = [('label', label_field), ('title', text_field), ('text', text_field), ('titletext', text_field)]
+fields = [('label', label_field), ('titletext', text_field)]
 
 # TabularDataset
 source_folder = "data/real_fake_news"
@@ -131,7 +131,7 @@ def train(model,
     # training loop
     model.train()
     for epoch in range(num_epochs):
-        for (labels, title, text, titletext), _ in train_loader:
+        for (labels, titletext), _ in train_loader:
             labels = labels.type(torch.LongTensor)           
             labels = labels.to(device)
             titletext = titletext.type(torch.LongTensor)  
@@ -210,7 +210,7 @@ def evaluate(model, test_loader):
 
     model.eval()
     with torch.no_grad():
-        for (labels, title, text, titletext), _ in test_loader:
+        for (labels, titletext), _ in test_loader:
 
                 labels = labels.type(torch.LongTensor)           
                 labels = labels.to(device)

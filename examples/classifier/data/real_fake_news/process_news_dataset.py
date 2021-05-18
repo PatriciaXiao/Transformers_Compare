@@ -6,7 +6,8 @@ df = pd.read_csv("news.csv")
 
 out_df = pd.DataFrame(data=dict())
 for field in ['title', 'text', 'label']:
-    out_df[field] = df[field]
+    # out_df[field] = df[field]
+    out_df[field] = [" ".join(item.split()) for item in df[field]]
 
 s1 = list(out_df['title'])
 s2 = list(out_df['text'])
