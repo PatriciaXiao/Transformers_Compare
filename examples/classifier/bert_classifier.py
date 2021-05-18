@@ -17,6 +17,13 @@ import seaborn as sns
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 device = 'cpu' # "cuda:0"
 
+DEBUG = True
+if DEBUG:
+    debug_flag = ""
+else:
+    debug_flag = "_fullsize"
+
+
 # Model parameter
 MAX_SEQ_LEN = 128
 PAD_INDEX = tokenizer.convert_tokens_to_ids(tokenizer.pad_token)
@@ -32,8 +39,8 @@ fields = [('label', label_field), ('titletext', text_field)]
 # TabularDataset
 source_folder = "data/real_fake_news"
 destination_folder = "outs/debug"
-train, valid, test = TabularDataset.splits(path=source_folder, train='train.csv', validation='valid.csv',
-                                           test='test.csv', format='CSV', fields=fields, skip_header=True)
+train, valid, test = TabularDataset.splits(path=source_folder, train='train{}.csv'.format(debug_flag), validation='valid{}.csv'.format(debug_flag),
+                                           test='test{}.csv'.format(debug_flag), format='CSV', fields=fields, skip_header=True)
 
 # Iterators
 
