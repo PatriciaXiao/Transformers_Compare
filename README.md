@@ -27,6 +27,16 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 
 ## Compare
 
+### A brief history
+
+* Simple RNN
+  * simply Seq2Seq, the downside is forgetting as the sequence grows long
+* Contextualize RNN
+  * introducing context, or encoded source sentence --- usually the average hidden state or the final hidden state of the encoder; avoid forgetting, but lack dynamic
+* Contextualized RNN with attention / soft align
+  * [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/pdf/1409.0473.pdf)
+* Transformer(2017)
+
 ### Compare their costs
 
 ![Compare Cost](./compare_cost.png)
@@ -57,6 +67,7 @@ References:
   * [BERT could also be used for few-shot learning](https://kexue.fm/archives/7764/comment-page-1)
   * [A faster and better MLM](https://kexue.fm/archives/7661) ([paper on ArXiV](https://arxiv.org/abs/2004.08097))
   * [Transformers benefit from Masks, plus the idea of using BERT as Seq2Seq model, etc.](https://kexue.fm/archives/6933)
+  * [History of Transformer: emerged from Machine Translation](https://zhuanlan.zhihu.com/p/104393915)
 
 ### Other important differences
 
