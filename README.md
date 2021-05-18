@@ -26,7 +26,7 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 
 | Model Name | # Parameters | Memory Cost (≥) | Training Set  | Pre-training ($) |
 |------------|--------------|-----------------|---------------|------------------|
-| GPT        | 110 million  |                 | 5.75 gigabyte |                  |
+| GPT        | 117 million  |                 | 5.75 gigabyte |                  |
 | GPT-2      | 1.54 billion | 24 gigabyte     | 40 gigabyte   | 50 thousand      |
 | GPT-3      | 175 billion  | 350 gigabyte    | 700 gigabyte  | 12 million       |
 | BERT-large | 340 million  | 16 gigabyte     |               | 7 thousand       |
@@ -42,4 +42,5 @@ References:
 * [BART training discussion](https://github.com/pytorch/fairseq/issues/2731)
 * [BERT pretraining dataset](https://d2l.ai/chapter_natural-language-processing-pretraining/bert-dataset.html)
 * [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models (a paper on optimizing the memory)](https://arxiv.org/pdf/1910.02054.pdf)
+* [GPT summary blog](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)
 
