@@ -24,7 +24,9 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 * [It's Not Just Size That Matters](https://arxiv.org/abs/2009.07118)
 * [Pre-trained methods could be applied to other structures](https://arxiv.org/abs/2105.03322)
 
-## Compare Their Costs
+## Compare
+
+### Compare their costs
 
 ![Compare Cost](./compare_cost.png)
 
@@ -48,6 +50,15 @@ References:
 * [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models (a paper on optimizing the memory)](https://arxiv.org/pdf/1910.02054.pdf)
 * [GPT summary blog](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)
 * [A transformers summary blog](https://www.topbots.com/generalized-language-models-bert-openai-gpt2/)
+
+### Other important differences
+
+#### Encoder v.s. Decoder
+
+Encoder-only v.s. Decoder-only
+* An encoder-only Transformer, such as **BERT**, each position in the input corresponds to the output at the same position (or [MASK] if masked).
+* A decoder-only Transformer, such as **GPT** models, is meant for autoregressive inference. In other words, the tokens in the input are shifted one position to the right with respect to the output. If the output is ```[hello, world, are, you, okay </end>]```, the input is ```[<start>, hello, world, are, you, okay </end>]```.
+* At inference time, BERT generates all output at once; GPT iteratively generate one token at a time.
 
 
 
