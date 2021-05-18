@@ -31,7 +31,7 @@ fields = [('label', label_field), ('titletext', text_field)]
 source_folder = "data/real_fake_news"
 destination_folder = "outs/debug"
 train, valid, test = TabularDataset.splits(path=source_folder, train='train.csv', validation='valid.csv',
-                                           test='test.csv', format='CSV', fields=fields, skip_header=True, truncation=True)
+                                           test='test.csv', format='CSV', fields=fields, skip_header=True)
 
 # Iterators
 
