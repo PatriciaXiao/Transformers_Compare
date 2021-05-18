@@ -26,11 +26,14 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 
 ![Compare Cost](./compare_cost.png)
 
-| Model Name | # Parameters | Memory Cost  | Training Set Size  | Pre-training ($) |
-|------------|--------------|--------------|--------------------|------------------|
-| GPT-3      | 175 billion  | 300 gigabyte | 499 billion tokens | 12 million       |
-|            |              |              |                    |                  |
-|            |              |              |                    |                  |
+| Model Name | # Parameters | Memory Cost (≥) | Training Set  | Pre-training ($) |
+|------------|--------------|-----------------|---------------|------------------|
+| GPT        | 110 million  |                 | 5.75 gigabyte |                  |
+| GPT-2      | 1.54 billion | 24 gigabyte     | 40 gigabyte   | 50 thousand      |
+| GPT-3      | 175 billion  | 350 gigabyte    | 700 gigabyte  | 12 million       |
+| BERT-large | 340 million  | 16 gigabyte     |               | 7 thousand       |
+|            |              |                 |               |                  |
+|            |              |                 |               |                  |
 
 References:
 * [BookCorpus](https://huggingface.co/datasets/bookcorpus)
