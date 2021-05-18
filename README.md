@@ -11,7 +11,7 @@
 * [XLNet](https://arxiv.org/abs/1906.08237)
 
 ### Decoder-Only
-GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.05365) in pre-training phase. (language model, LM)
+GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.05365) in pre-training phase. (language model, LM; single directed)
 * [GPT-1](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
 * [GPT-2](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
 * [GPT-3](https://arxiv.org/abs/2005.14165)
@@ -21,8 +21,6 @@ GPT / GPT-1 is using the same objective as [ELMo](https://arxiv.org/abs/1802.053
 * [T5](https://arxiv.org/pdf/1910.10683.pdf)
 
 ## Compare Their Costs
-
-### Number of parameters
 
 ![Compare Cost](./compare_cost.png)
 
@@ -43,6 +41,5 @@ References:
 * [BERT training cost](https://dl.acm.org/doi/fullHtml/10.1145/3381831#:~:text=BERT%2Dlarge%20was%20trained%20on,an%20estimated%20cost%20of%20%2425%2C000.)
 * [BART training discussion](https://github.com/pytorch/fairseq/issues/2731)
 
-
-
+## Compare of 
 
