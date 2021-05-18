@@ -50,7 +50,7 @@ References:
 * [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models (a paper on optimizing the memory)](https://arxiv.org/pdf/1910.02054.pdf)
 * [GPT summary blog](https://medium.com/walmartglobaltech/the-journey-of-open-ai-gpt-models-32d95b7b7fb2)
 * [A transformers summary blog](https://www.topbots.com/generalized-language-models-bert-openai-gpt2/)
-* [Discussion of encoder-only v.s. decoder-only](https://datascience.stackexchange.com/questions/87637/what-is-the-difference-between-gpt-blocks-and-bert-blocks)
+* [Discussion of encoder-only v.s. decoder-only](https://datascience.stackexchange.com/questions/87637/what-is-the-difference-between-gpt-blocks-and-bert-blocks), [another discussion on similar topic](https://stats.stackexchange.com/questions/515152/deciding-between-decoder-only-or-encoder-only-transformers-bert-gpt)
 
 ### Other important differences
 
