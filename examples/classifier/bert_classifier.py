@@ -116,7 +116,7 @@ def train(model,
           train_loader = train_iter,
           valid_loader = valid_iter,
           num_epochs = 5,
-          eval_every = len(train_iter) // 2,
+          eval_every = 1, # len(train_iter) // 2,
           file_path = destination_folder,
           best_valid_loss = float("Inf")):
     
@@ -153,7 +153,7 @@ def train(model,
                 with torch.no_grad():                    
 
                     # validation loop
-                    for (labels, title, text, titletext), _ in valid_loader:
+                    for (labels, titletext), _ in valid_loader:
                         labels = labels.type(torch.LongTensor)           
                         labels = labels.to(device)
                         titletext = titletext.type(torch.LongTensor)  
