@@ -12,8 +12,8 @@ for field in ['label']: # for field in ['title', 'text', 'label']:
 s1 = list(df['title'])
 s2 = list(df['text'])
 out_df['titletext'] = [s1[i] + " " + s2[i] for i in range(len(df))]
-for i in range(len(out_df)):
-	out_df['titletext'][i] = " ".join(out_df['titletext'][i].split()[:MAX_SEQ_LEN])
+# for i in range(len(out_df)):
+# 	out_df['titletext'][i] = " ".join(out_df['titletext'][i].split()[:MAX_SEQ_LEN])
 
 split = [0.8, 0.1, 0.1]
 n = len(out_df)
