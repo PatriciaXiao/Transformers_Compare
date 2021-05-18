@@ -13,7 +13,6 @@ import torch.optim as optim
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import seaborn as sns
 
-
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # Model parameter
@@ -33,6 +32,8 @@ source_folder = "data/real_fake_news"
 destination_folder = "outs/debug"
 train, valid, test = TabularDataset.splits(path=source_folder, train='train.csv', validation='valid.csv',
                                            test='test.csv', format='CSV', fields=fields, skip_header=True)
+
+exit(0)
 
 # Iterators
 
