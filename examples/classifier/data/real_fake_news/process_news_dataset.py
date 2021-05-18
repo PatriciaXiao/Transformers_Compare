@@ -2,6 +2,7 @@ import pandas as pd
 
 MAX_SEQ_LEN = 128
 
+
 df = pd.read_csv("news.csv")
 
 out_df = pd.DataFrame(data=dict())
