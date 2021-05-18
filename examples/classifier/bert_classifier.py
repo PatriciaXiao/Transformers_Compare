@@ -33,8 +33,6 @@ destination_folder = "outs/debug"
 train, valid, test = TabularDataset.splits(path=source_folder, train='train.csv', validation='valid.csv',
                                            test='test.csv', format='CSV', fields=fields, skip_header=True)
 
-exit(0)
-
 # Iterators
 
 train_iter = BucketIterator(train, batch_size=16, sort_key=lambda x: len(x.text),
