@@ -41,5 +41,4 @@ References:
 * [BERT training cost](https://dl.acm.org/doi/fullHtml/10.1145/3381831#:~:text=BERT%2Dlarge%20was%20trained%20on,an%20estimated%20cost%20of%20%2425%2C000.)
 * [BART training discussion](https://github.com/pytorch/fairseq/issues/2731)
 
-## Compare of 
 
