@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import torch
 # Preliminaries
-from torchtext.legacy.data import Field
+from torchtext.legacy.data import Field, TabularDataset, BucketIterator, Iterator
 # Models
 import torch.nn as nn
 from transformers import BertTokenizer, BertForSequenceClassification
