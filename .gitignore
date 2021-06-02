@@ -1,3 +1,4 @@
 
 *.pt
 examples/classifier/data/real_fake_news/.DS_Store
+.DS_Store
